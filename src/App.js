@@ -136,7 +136,7 @@ function App() {
 
   return (
     <div>
-      <h1>간단한 MBTI 검사</h1>
+      <h1>MBTI TEST</h1>
 
       {!result ? (
         <>
