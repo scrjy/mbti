@@ -1,38 +1,128 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 30px;
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answers {
   display: flex;
   flex-direction: column;
+  gap: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button.answer-btn {
+  width: 500px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  background: white;
+  color: #4a90e2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.answer-btn:hover {
+  background: #4a90e2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.result {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #4a90e2;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+button.prev-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  background: white;
+  color: #4a90e2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+button.prev-btn:hover:not(:disabled) {
+  background: #4a90e2;
+  color: white;
+}
+
+button.prev-btn:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+  background: #f9f9f9;
+}
+
+.result-container {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.result-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.result-box {
+  background-color: #f9f9fb;
+  border-left: 6px solid #4a90e2;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.mbti-type {
+  font-size: 2.2rem;
+  color: #4a90e2;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mbti-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
 }
